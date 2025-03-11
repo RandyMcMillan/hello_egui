@@ -19,8 +19,8 @@ use crate::futures::{sleep, spawn};
 use crate::shared_state::SharedState;
 
 pub const CHAT_EXAMPLE: Example = Example {
-    name: "Chat",
-    slug: "chat",
+    name: "Home",
+    slug: "gnostr-chat",
     crates: &[
         CrateUsage::simple(Crate::EguiInfiniteScroll),
         CrateUsage::new(Crate::EguiInbox, "For \"receiving\" messages"),

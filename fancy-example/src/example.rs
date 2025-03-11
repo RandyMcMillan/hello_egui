@@ -1,34 +1,34 @@
 use crate::chat::CHAT_EXAMPLE;
-use crate::color_sort::{COLOR_SORT_EXAMPLE, COLOR_SORT_WRAPPED_EXAMPLE};
+//use crate::color_sort::{COLOR_SORT_EXAMPLE, COLOR_SORT_WRAPPED_EXAMPLE};
 use crate::crate_ui::CrateUsage;
 use crate::flex::FLEX_EXAMPLE;
-use crate::gallery::GALLERY_EXAMPLE;
+//use crate::gallery::GALLERY_EXAMPLE;
 use crate::shared_state::SharedState;
-use crate::signup_form::SIGNUP_FORM_EXAMPLE;
-use crate::stargazers::STARGAZERS_EXAMPLE;
+//use crate::signup_form::SIGNUP_FORM_EXAMPLE;
+//use crate::stargazers::STARGAZERS_EXAMPLE;
 use egui::Ui;
 
 pub const EXAMPLES: &[Category] = &[
+    //Category {
+    //    name: "Drag and Drop",
+    //    examples: &[
+    //        COLOR_SORT_EXAMPLE,
+    //        COLOR_SORT_WRAPPED_EXAMPLE,
+    //        STARGAZERS_EXAMPLE,
+    //    ],
+    //},
     Category {
-        name: "Drag and Drop",
-        examples: &[
-            COLOR_SORT_EXAMPLE,
-            COLOR_SORT_WRAPPED_EXAMPLE,
-            STARGAZERS_EXAMPLE,
-        ],
+        name: "",
+        examples: &[CHAT_EXAMPLE]//, GALLERY_EXAMPLE],
     },
-    Category {
-        name: "Infinite Scroll",
-        examples: &[CHAT_EXAMPLE, GALLERY_EXAMPLE],
-    },
-    Category {
-        name: "Form Validation",
-        examples: &[SIGNUP_FORM_EXAMPLE],
-    },
-    Category {
-        name: "Layout",
-        examples: &[FLEX_EXAMPLE],
-    },
+    //Category {
+    //    name: "Form Validation",
+    //    examples: &[SIGNUP_FORM_EXAMPLE],
+    //},
+    //Category {
+    //    name: "Layout",
+    //    examples: &[FLEX_EXAMPLE],
+    //},
 ];
 
 pub trait ExampleTrait {
